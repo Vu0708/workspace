@@ -1,31 +1,31 @@
 <?php
 class Building {
-    private $name;
-    private $height;
+    protected $name;
+    protected $height;
     
     function __contrust($name,$height){
-        $this -> name = $name;
-        $this -> height = $height;
+        $this->name = $name;
+        $this->height = $height;
     }
     
     function setName(string $name):void{
-          $this -> name = $name;
+          $this->name = $name;
       }
       
       function getName():string{
-          return $this -> name;
+          return $this->name;
       }
       
       function setHeight(int $height):void{
-          $this -> height = $height;
+          $this->height = $height;
       }
       
       function getHeight():int{
-          return $this -> height;
+          return $this->height;
       }
       
       function getProfile(){
-          $profile = "{$this -> name} の高さは {$this -> height}";
+          $profile = "{$this->name} の高さは {$this->height}";
           return $profile;
       }
 }
